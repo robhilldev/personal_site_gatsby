@@ -8,34 +8,36 @@ import * as styles from "../components/index.module.css"
 
 const links = [
   {
-    text: "Calculator",
+    text: "Web Calc",
     url: "https://robhilldev.github.io/web_calc/",
     description:
-      "A browser based calculator.",
+      "A browser based calculator that can handle multiple operators at a time, respects order of operations, and can be installed as a Progressive Web App (PWA).",
+    coderepo: "https://github.com/robhilldev/web_calc",
   },
   {
-    text: "Plugin Library",
-    url: "https://www.gatsbyjs.com/plugins",
+    text: "Project Placeholder",
+    url: "#",
     description:
-      "Learn how to add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
+      "Another project worth showcasing.",
+    coderepo: "#",
   },
 ]
 
-const moreLinks = [
-  {
-    text: "Documentation",
-    url: "https://gatsbyjs.com/docs/",
-  },
-  {
-    text: "Starters",
-    url: "https://gatsbyjs.com/starters/",
-  },
-  {
-    text: "Contributing",
-    url: "https://www.gatsbyjs.com/contributing/",
-  },
-  { text: "Issues", url: "https://github.com/gatsbyjs/gatsby/issues" },
-]
+// const moreLinks = [
+//   {
+//     text: "Documentation",
+//     url: "https://gatsbyjs.com/docs/",
+//   },
+//   {
+//     text: "Starters",
+//     url: "https://gatsbyjs.com/starters/",
+//   },
+//   {
+//     text: "Contributing",
+//     url: "https://www.gatsbyjs.com/contributing/",
+//   },
+//   { text: "Issues", url: "https://github.com/gatsbyjs/gatsby/issues" },
+// ]
 
 const IndexPage = () => (
   <Layout>
@@ -63,15 +65,21 @@ const IndexPage = () => (
             {link.text} ↗
           </a>
           <p className={styles.listItemDescription}>{link.description}</p>
+          <a
+            className={styles.listItemLink}
+            href={`${link.coderepo}`}
+          >
+            Project Github Link ↗
+          </a>
         </li>
       ))}
     </ul>
-    {moreLinks.map((link, i) => (
+    {/* {moreLinks.map((link, i) => (
       <React.Fragment key={link.url}>
         <a href={`${link.url}`}>{link.text}</a>
         {i !== moreLinks.length - 1 && <> · </>}
       </React.Fragment>
-    ))}
+    ))} */}
   </Layout>
 )
 
