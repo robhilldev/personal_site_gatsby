@@ -5,11 +5,11 @@
  * See: https://www.gatsbyjs.com/docs/how-to/querying-data/use-static-query/
  */
 
-import * as React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import * as React from "react";
+import { useStaticQuery, graphql } from "gatsby";
 
-import Header from "./header"
-import "./layout.css"
+import Header from "./header";
+import "./layout.css";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
         }
       }
     }
-  `)
+  `);
 
   return (
     <>
@@ -43,12 +43,13 @@ const Layout = ({ children }) => {
           {` `}
           <a href="https://www.gatsbyjs.com">Gatsby</a> ·&nbsp;
           <a href="https://react.dev/">React</a> ·&nbsp;
-          <a href="https://tailwindcss.com">Tailwind</a>.&nbsp;
-          Hosted on <a href="https://www.digitalocean.com">Digital Ocean</a>.
+          <a href="https://graphql.org/">GraphQL</a>.
+          {/* <a href="https://tailwindcss.com">Tailwind</a>.&nbsp;
+          Hosted on <a href="https://www.digitalocean.com">Digital Ocean</a>. */}
         </footer>
       </div>
     </>
   )
 }
 
-export default Layout
+export default Layout;

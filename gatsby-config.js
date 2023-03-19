@@ -10,17 +10,25 @@
 module.exports = {
   siteMetadata: {
     title: `Robhilldev Portfolio`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    description: `A portfolio site for showing off Rob Hill's projects.`,
+    author: `@robhilldev`,
+    siteUrl: `https://github.com/robhilldev`, // to be determined
   },
   plugins: [
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `projects`,
+        path: `${__dirname}/data/projects.json`,
+      },
+    },
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/data/images`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -36,8 +44,8 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `data/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
   ],
-}
+};
