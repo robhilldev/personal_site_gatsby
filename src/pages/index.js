@@ -9,13 +9,17 @@ import * as styles from "../components/index.module.css";
 
 export const query = graphql`
   query {
-    projectsJson {
-      name
-      description
-      app_url
-      code_url
+    allProjectsJson {
+      edges {
+        node {
+          name
+          description
+          app_url
+          code_url
+        }
+      }
     }
-  } 
+  }
 `;
 
 // TODO: move this into json file in data folder
@@ -45,17 +49,23 @@ const IndexPage = ({ data }) => (
         width={100}
         quality={95}
         formats={["auto", "webp", "avif"]}
-        alt=""
+        alt="A frog on a flower"
         style={{ marginBottom: `var(--space-3)` }}
       />
       <h1>Welcome to my portfolio!</h1>
     </div>
-    <Project
-      name={data.projectsJson.name}
-      description={data.projectsJson.description}
-      app_url={data.projectsJson.app_url}
-      code_url={data.projectsJson.code_url}
-    />
+    <ul className={styles.list}>
+      {data.allProjectsJson.edges.map(({ node: project }) => (
+        <li key={project.name} className={styles.listItem}>
+          <Project
+            name={project.name}
+            description={project.description}
+            app_url={project.app_url}
+            code_url={project.code_url}
+          />
+        </li>
+      ))}
+    </ul>
     {/* {moreLinks.map((link, i) => (
       <React.Fragment key={link.url}>
         <a href={`${link.url}`}>{link.text}</a>
