@@ -5,7 +5,6 @@ import { StaticImage } from "gatsby-plugin-image";
 import Layout from "../components/layout";
 import Project from "../components/project";
 import Seo from "../components/seo";
-import * as styles from "../components/index.module.css";
 
 export const query = graphql`
   query {
@@ -22,50 +21,36 @@ export const query = graphql`
   }
 `;
 
-// TODO: move this into json file in data folder
-// TODO: then pull it in with GraphQL query like the project data
-// const moreLinks = [
-//   {
-//     text: "Documentation",
-//     url: "https://gatsbyjs.com/docs/",
-//   },
-//   {
-//     text: "Starters",
-//     url: "https://gatsbyjs.com/starters/",
-//   },
-//   {
-//     text: "Contributing",
-//     url: "https://www.gatsbyjs.com/contributing/",
-//   },
-//   { text: "Issues", url: "https://github.com/gatsbyjs/gatsby/issues" },
-// ]
-
 const IndexPage = ({ data }) => (
   <Layout>
-    <div className={styles.textCenter}>
+    <div className="px-4 mb-10 flex flex-col justify-center">
       <StaticImage
+        className="mt-8 mb-8 self-center"
         src="../../data/images/frog_on_flower.jpeg"
         loading="eager"
         width={100}
         quality={95}
         formats={["auto", "webp", "avif"]}
         alt="A frog on a flower"
-        style={{ marginBottom: `var(--space-3)` }}
       />
-      <h1>Welcome to my portfolio!</h1>
+      <h1 className="mb-2 text-3xl font-extrabold self-center">
+        Hey, I'm Robhilldev.
+      </h1>
+      <h1 className="mb-2 text-3xl font-extrabold self-center">
+        Welcome to my portfolio!
+      </h1>
     </div>
-    <ul className={styles.list}>
+    <div className="mx-10 my-5 flex flex-row flex-wrap justify-between lg:px-20">
       {data.allProjectsJson.edges.map(({ node: project }) => (
-        <li key={project.name} className={styles.listItem}>
-          <Project
-            name={project.name}
-            description={project.description}
-            app_url={project.app_url}
-            code_url={project.code_url}
-          />
-        </li>
+        <Project
+          key={project.name}
+          name={project.name}
+          description={project.description}
+          app_url={project.app_url}
+          code_url={project.code_url}
+        />
       ))}
-    </ul>
+    </div>
   </Layout>
 );
 

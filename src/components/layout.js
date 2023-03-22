@@ -25,27 +25,35 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: `var(--size-content)`,
-          padding: `var(--size-gutter)`,
-        }}
-      >
+      <div>
         <main>{children}</main>
-        <footer
-          style={{
-            marginTop: `var(--space-5)`,
-            fontSize: `var(--font-sm)`,
-          }}
-        >
-          © {new Date().getFullYear()} &middot; Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a> ·&nbsp;
-          <a href="https://react.dev/">React</a> ·&nbsp;
-          <a href="https://graphql.org/">GraphQL</a>.
-          {/* <a href="https://tailwindcss.com">Tailwind</a>.&nbsp;
-          Hosted on <a href="https://www.digitalocean.com">Digital Ocean</a>. */}
+        <footer className="px-4">
+          <div className="flex flex-row flex-wrap justify-center">
+            <div>
+              ©&nbsp;{new Date().getFullYear()}
+              &nbsp;&middot;&nbsp;Built with&nbsp;
+            </div>
+            <div>
+              <a href="https://www.gatsbyjs.com">
+                Gatsby
+              </a>&nbsp;&middot;&nbsp;
+              <a href="https://react.dev/">
+                React
+              </a>&nbsp;&middot;&nbsp;
+              <a href="https://graphql.org/">
+                GraphQL
+              </a>&nbsp;&middot;&nbsp;
+              <a href="https://tailwindcss.com">
+                TailwindCSS
+              </a>.
+            </div>
+            {/* <div>
+              Hosted on
+              <a href="https://www.digitalocean.com">
+                Digital Ocean
+              </a>.
+            </div> */}
+          </div>
         </footer>
       </div>
     </>
