@@ -47,5 +47,6 @@ module.exports = {
         icon: `data/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-plugin-postcss`,
   ],
 };
