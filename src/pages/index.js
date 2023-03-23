@@ -23,9 +23,9 @@ export const query = graphql`
 
 const IndexPage = ({ data }) => (
   <Layout>
-    <div className="px-4 mb-10 flex flex-col justify-center">
+    <div className="px-4 mb-12 flex flex-col justify-center">
       <StaticImage
-        className="mt-8 mb-8 self-center"
+        className="mt-8 mb-8 self-center rounded-xl"
         src="../../data/images/frog_on_flower.jpeg"
         loading="eager"
         width={100}
@@ -42,13 +42,15 @@ const IndexPage = ({ data }) => (
     </div>
     <div className="mx-10 my-5 flex flex-row flex-wrap justify-between lg:px-20">
       {data.allProjectsJson.edges.map(({ node: project }) => (
-        <Project
-          key={project.name}
-          name={project.name}
-          description={project.description}
-          app_url={project.app_url}
-          code_url={project.code_url}
-        />
+        <div className="mb-3 md:basis-1/2 sm:basis-auto">
+          <Project
+            key={project.name}
+            name={project.name}
+            description={project.description}
+            app_url={project.app_url}
+            code_url={project.code_url}
+          />
+        </div>
       ))}
     </div>
   </Layout>
