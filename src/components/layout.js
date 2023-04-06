@@ -34,22 +34,42 @@ const Layout = ({ children }) => {
               &nbsp;&middot;&nbsp;Built with&nbsp;
             </div>
             <div>
-              <a href="https://www.gatsbyjs.com">
+              <a
+                href="https://www.gatsbyjs.com"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Gatsby
               </a>&nbsp;&middot;&nbsp;
-              <a href="https://react.dev/">
+              <a
+                href="https://react.dev/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 React
               </a>&nbsp;&middot;&nbsp;
-              <a href="https://graphql.org/">
+              <a
+                href="https://graphql.org/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 GraphQL
               </a>&nbsp;&middot;&nbsp;
-              <a href="https://tailwindcss.com">
+              <a
+                href="https://tailwindcss.com"
+                target="_blank"
+                rel="noreferrer"
+              >
                 TailwindCSS
               </a>.
             </div>
             {/* <div>
               Hosted on
-              <a href="https://www.digitalocean.com">
+              <a 
+                href="https://www.digitalocean.com"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Digital Ocean
               </a>.
             </div> */}
