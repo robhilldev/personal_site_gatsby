@@ -10,11 +10,15 @@ const Project = ({ name, description, app_url, code_url }) => (
     </p>
     <p><a
       className="underline decoration-dotted"
-      href={app_url}>Visit live app ↗
+      href={app_url}
+      target="_blank"
+      rel="noreferrer">Visit live app ↗
     </a></p>
     <p><a
       className="underline decoration-dotted"
-      href={code_url}>Visit project code ↗
+      href={code_url}
+      target="_blank"
+      rel="noreferrer">Visit project code ↗
     </a></p>
   </div>
 );
