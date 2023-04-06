@@ -23,7 +23,7 @@ export const query = graphql`
 
 const IndexPage = ({ data }) => (
   <Layout>
-    <div className="px-4 mb-12 flex flex-col justify-center">
+    <div className="pt-8 px-4 mb-12 flex flex-col justify-center">
       <StaticImage
         className="mt-8 mb-8 self-center rounded-xl"
         src="../../data/images/frog_on_flower.jpeg"
