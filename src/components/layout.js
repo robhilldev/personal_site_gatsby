@@ -6,21 +6,21 @@
  */
 
 import * as React from "react";
-import { useStaticQuery, graphql } from "gatsby";
+// import { useStaticQuery, graphql } from "gatsby";
 
-import Header from "./header";
+// import Header from "./header";
 import "./layout.css";
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `);
+  // const data = useStaticQuery(graphql`
+  //   query SiteTitleQuery {
+  //     site {
+  //       siteMetadata {
+  //         title
+  //       }
+  //     }
+  //   }
+  // `);
 
   return (
     <>
@@ -61,18 +61,18 @@ const Layout = ({ children }) => {
                 rel="noreferrer"
               >
                 TailwindCSS
-              </a>.
+              </a>.&nbsp;&nbsp;
             </div>
-            {/* <div>
-              Hosted on
+            <div>
+              Hosted with&nbsp;
               <a 
-                href="https://www.digitalocean.com"
+                href="https://www.netlify.com/"
                 target="_blank"
                 rel="noreferrer"
               >
-                Digital Ocean
+                Netlify
               </a>.
-            </div> */}
+            </div>
           </div>
         </footer>
       </div>

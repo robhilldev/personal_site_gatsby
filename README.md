@@ -1,1 +1,1 @@
-A portfolio site created using Gatsby, React, and Tailwind.
+A personal portfolio site created using Gatsby, React, GraphQL, and Tailwind.
