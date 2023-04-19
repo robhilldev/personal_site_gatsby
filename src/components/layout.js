@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
       {/* <Header siteTitle={data.site.siteMetadata?.title || `Title`} /> */}
       <div>
         <main>{children}</main>
-        <footer className="px-4">
+        <footer className="mx-4">
           <div className="flex flex-row flex-wrap justify-center">
             <div>
               ©&nbsp;{new Date().getFullYear()}
