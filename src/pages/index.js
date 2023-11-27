@@ -15,6 +15,7 @@ export const query = graphql`
           description
           app_url
           code_url
+          tags
         }
       }
     }
@@ -42,13 +43,14 @@ const IndexPage = ({ data }) => (
     </div>
     <div className="mx-10 my-5 flex flex-row flex-wrap justify-between lg:px-20">
       {data.allProjectsJson.edges.map(({ node: project }) => (
-        <div className="mb-3 md:basis-1/2 sm:basis-auto">
+        <div className="md:basis-1/2 sm:basis-auto">
           <Project
             key={project.name}
             name={project.name}
             description={project.description}
             app_url={project.app_url}
             code_url={project.code_url}
+            tags={project.tags}
           />
         </div>
       ))}
