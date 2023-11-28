@@ -24,7 +24,7 @@ export const query = graphql`
 
 const IndexPage = ({ data }) => (
   <Layout>
-    <div className="my-20 mx-14 px-1 py-8 space-y-4 flex flex-col justify-center bg-gradient-to-br from-sky-500 via-teal-500 to-emerald-500 rounded-xl shadow-md lg:mx-36">
+    <div className="my-20 mx-14 px-8 py-8 pb-12 space-y-4 flex flex-col justify-center bg-gradient-to-br from-sky-500 via-teal-500 to-emerald-500 rounded-xl shadow-md lg:mx-36">
       <StaticImage
         className="mt-4 mb-4 self-center rounded-xl"
         src="../../data/images/frog_on_flower.jpeg"
