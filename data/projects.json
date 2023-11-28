@@ -5,7 +5,7 @@
     "description": "A browser based calculator that can handle multiple operators at a time, respects order of operations, and can be installed as a Progressive Web App (PWA).",
     "app_url": "https://robhilldev.github.io/web_calc/",
     "code_url": "https://github.com/robhilldev/web_calc",
-    "tags": ["React", "JavaScript", "PWA", "OrderOfOperations"]
+    "tags": ["React", "JavaScript", "PWA", "OrderOfOperations", "GithubPages"]
   },
   {
     "name": "Notes App",
@@ -13,7 +13,7 @@
     "description": "A no framework browser based notes app that allows for creating, editing, and deleting notes, with notes saved to local storage so they persist on browser refresh or restart.",
     "app_url": "https://robhilldev.github.io/notes_app/",
     "code_url": "https://github.com/robhilldev/notes_app",
-    "tags": ["JavaScript", "HTML", "CSS", "LocalStorage"]
+    "tags": ["JavaScript", "HTML", "CSS", "LocalStorage", "GithubPages"]
   },
   {
     "name": "Another Project",
@@ -21,7 +21,7 @@
     "description": "Some description of my next project, probably using NextJS.",
     "app_url": "#",
     "code_url": "#",
-    "tags": ["NextJS", "React", "Tailwind"]
+    "tags": ["NextJS", "React", "Tailwind", "Vercel"]
   },
   {
     "name": "This Portfolio!",
@@ -29,6 +29,6 @@
     "description": "A statically generated portfolio site using GraphQL to pull in each projects data at build time.",
     "app_url": "#",
     "code_url": "https://github.com/robhilldev/personal_site_gatsby",
-    "tags": ["Gatsby", "React", "Tailwind", "GraphQL"]
+    "tags": ["Gatsby", "React", "Tailwind", "GraphQL", "Netlify"]
   }
 ]

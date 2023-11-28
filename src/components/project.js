@@ -1,7 +1,7 @@
 import React from "react";
 
 const Project = ({ name, description, app_url, code_url, tags }) => (
-  <div className="mx-4 mb-8 py-8 px-8 border-2 rounded-xl border-slate-300">
+  <div className="mx-4 mb-8 py-8 px-8 border-2 rounded-xl border-slate-300 shadow-md">
     <h2 className="mb-3 text-2xl font-bold">
       {name}
     </h2>
