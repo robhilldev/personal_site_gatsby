@@ -24,7 +24,7 @@ export const query = graphql`
 
 const IndexPage = ({ data }) => (
   <Layout>
-    <div className="my-20 mx-14 px-8 py-8 pb-12 space-y-4 flex flex-col justify-center bg-gradient-to-br from-sky-500 via-teal-500 to-emerald-500 rounded-xl shadow-md lg:mx-36">
+    <div className="my-20 mx-8 px-8 py-8 pb-12 sm:mx-14 lg:mx-36 space-y-4 flex flex-col justify-center bg-gradient-to-br from-sky-500 via-teal-500 to-emerald-500 rounded-xl shadow-md">
       <StaticImage
         className="mt-4 mb-4 self-center rounded-xl"
         src="../../data/images/frog_on_flower.jpeg"
@@ -41,7 +41,7 @@ const IndexPage = ({ data }) => (
         Welcome to my portfolio!
       </h1>
     </div>
-    <div className="mx-10 my-5 flex flex-row flex-wrap justify-between lg:mx-32">
+    <div className="mx-4 my-5 sm:mx-10 lg:mx-32 flex flex-row flex-wrap justify-between">
       {data.allProjectsJson.edges.map(({ node: project }) => (
         <div className="md:basis-1/2 sm:basis-auto">
           <Project
