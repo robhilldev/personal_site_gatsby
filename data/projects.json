@@ -11,7 +11,7 @@
     "name": "Notes App",
     "page": "notes_app",
     "description": "A no framework browser based notes app that allows for creating, editing, and deleting notes, with notes saved to local storage so they persist on browser refresh or restart.",
-    "app_url": "#",
+    "app_url": "https://robhilldev.github.io/notes_app/",
     "code_url": "https://github.com/robhilldev/notes_app",
     "tags": ["JavaScript", "HTML", "CSS", "LocalStorage"]
   },
