@@ -9,7 +9,7 @@ const Project = ({ name, description, app_url, code_url, tags }) => (
       {description}
     </p>
     {app_url !== "#" &&
-      <p><a
+      <p className="mb-4"><a
         className="underline decoration-dotted text-blue-700 decoration-blue-700"
         href={app_url}
         target="_blank"
@@ -17,7 +17,7 @@ const Project = ({ name, description, app_url, code_url, tags }) => (
       </a></p>
     }
     {code_url !== "#" &&
-      <p><a
+      <p className="mb-6"><a
         className="underline decoration-dotted text-blue-700 decoration-blue-700"
         href={code_url}
         target="_blank"

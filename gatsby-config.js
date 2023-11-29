@@ -12,7 +12,7 @@ module.exports = {
     title: `Robhilldev Portfolio`,
     description: `A portfolio site for showing off Rob Hill's projects.`,
     author: `@robhilldev`,
-    siteUrl: `https://github.com/robhilldev`, // to be determined
+    siteUrl: `https://robhilldev.netlify.app/`,
   },
   plugins: [
     `gatsby-transformer-json`,
@@ -44,7 +44,7 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `data/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `data/images/frog_icon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-postcss`,
