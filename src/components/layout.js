@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
     <>
       {/* <Header siteTitle={data.site.siteMetadata?.title || `Title`} /> */}
       <div>
-        <main>{children}</main>
+        <main className="pt-8 sm:pt-16">{children}</main>
         <footer className="mx-4 mt-12">
           <div className="flex flex-row flex-wrap justify-center">
             <div>
