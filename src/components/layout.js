@@ -6,56 +6,32 @@
  */
 
 import * as React from "react";
-// import { useStaticQuery, graphql } from "gatsby";
-// import Header from "./header";
+import { useStaticQuery, graphql } from "gatsby";
+import Header from "./header";
 import "./layout.css";
 
 const Layout = ({ children }) => {
-  // const data = useStaticQuery(graphql`
-  //   query SiteTitleQuery {
-  //     site {
-  //       siteMetadata {
-  //         title
-  //       }
-  //     }
-  //   }
-  // `);
+  const data = useStaticQuery(graphql`
+    query SiteTitleQuery {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `);
 
   return (
     <>
-      {/* <Header siteTitle={data.site.siteMetadata?.title || `Title`} /> */}
+      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div className="bg-neutral-200">
         <main className="pt-6 sm:pt-10">{children}</main>
         <footer className="px-2 py-1">
           <div className="flex flex-row flex-wrap justify-center">
             <div>
-              ©&nbsp;{new Date().getFullYear()}
-              &nbsp;&middot;&nbsp;Built by Robhilldev.{/*&nbsp;*/}
+              &middot;&nbsp;©&nbsp;{new Date().getFullYear()}
+              &nbsp;&middot;&nbsp;Made by Robhilldev&nbsp;&middot;
             </div>
-            {/* <div>
-              <a href="https://www.gatsbyjs.com" target="_blank" rel="noreferrer">
-                Gatsby
-              </a>
-              &nbsp;&middot;&nbsp;
-              <a href="https://react.dev/" target="_blank" rel="noreferrer">
-                React
-              </a>
-              &nbsp;&middot;&nbsp;
-              <a href="https://graphql.org/" target="_blank" rel="noreferrer">
-                GraphQL
-              </a>
-              &nbsp;&middot;&nbsp;
-              <a href="https://tailwindcss.com" target="_blank" rel="noreferrer">
-                TailwindCSS
-              </a>
-              .&nbsp;&nbsp;
-            </div>
-            <div>
-              Hosted with&nbsp;
-              <a href="https://www.netlify.com/" target="_blank" rel="noreferrer">
-                Netlify
-              </a>.
-            </div> */}
           </div>
         </footer>
       </div>

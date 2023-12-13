@@ -67,7 +67,7 @@ const IndexPage = ({ data }) => (
             src="../../data/images/linkedin-icon.png"
             loading="eager"
             formats={["auto", "webp", "avif"]}
-            alt="Github icon"
+            alt="Linkedin icon"
           />
           LinkedIn
         </a> */}
