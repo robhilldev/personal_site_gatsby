@@ -24,15 +24,15 @@ const Layout = ({ children }) => {
   return (
     <>
       {/* <Header siteTitle={data.site.siteMetadata?.title || `Title`} /> */}
-      <div>
-        <main className="pt-8 sm:pt-16">{children}</main>
-        <footer className="mx-4 mt-12">
+      <div className="bg-neutral-200">
+        <main className="pt-6 sm:pt-10">{children}</main>
+        <footer className="px-2 py-1">
           <div className="flex flex-row flex-wrap justify-center">
             <div>
               ©&nbsp;{new Date().getFullYear()}
-              &nbsp;&middot;&nbsp;Built with&nbsp;
+              &nbsp;&middot;&nbsp;Built by Robhilldev.{/*&nbsp;*/}
             </div>
-            <div>
+            {/* <div>
               <a href="https://www.gatsbyjs.com" target="_blank" rel="noreferrer">
                 Gatsby
               </a>
@@ -55,7 +55,7 @@ const Layout = ({ children }) => {
               <a href="https://www.netlify.com/" target="_blank" rel="noreferrer">
                 Netlify
               </a>.
-            </div>
+            </div> */}
           </div>
         </footer>
       </div>
