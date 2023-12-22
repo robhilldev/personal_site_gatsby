@@ -28,7 +28,7 @@ const Layout = ({ children }) => {
         <main className="pt-6 sm:pt-10">{children}</main>
         <footer className="px-2 py-1">
           <div className="flex flex-row flex-wrap justify-center">
-            <div className="rounded-md bg-white/50 px-1 shadow-md backdrop-blur-3xl">
+            <div className="rounded-md bg-white/50 px-1 shadow-md ring-1 ring-inset ring-white/10 backdrop-blur-3xl">
               &middot;&nbsp;©&nbsp;{new Date().getFullYear()}
               &nbsp;&middot;&nbsp;Made by Robhilldev&nbsp;&middot;
             </div>

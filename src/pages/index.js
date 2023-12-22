@@ -38,7 +38,7 @@ const IndexPage = ({ data }) => (
         formats={["auto", "webp", "avif"]}
         alt="A frog on a flower"
       />
-      <div className="mb-4 rounded-xl bg-white/30 px-3 pt-3 shadow-md">
+      <div className="mb-4 rounded-xl bg-white/30 px-3 pt-3 shadow-md ring-1 ring-inset ring-white/10">
         <h1 className="mb-4 self-center text-center text-3xl font-extrabold">
           Hey, I'm Robhilldev.
         </h1>
