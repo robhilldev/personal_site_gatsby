@@ -12,6 +12,7 @@
       "LocalStorage",
       "DOM",
       "StateManagement",
+      "PWA",
       "GithubPages"
     ]
   },

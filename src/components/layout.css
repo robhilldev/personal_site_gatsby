@@ -36,6 +36,7 @@ html {
   font-size: var(--font-md);
   line-height: var(--line-height-normal);
   overflow-y: scroll;
+  overscroll-behavior: none;
 }
 body {
   -moz-osx-font-smoothing: grayscale;
@@ -46,6 +47,7 @@ body {
   font-weight: normal;
   margin: 0;
   word-wrap: break-word;
+  overscroll-behavior: none;
 }
 a {
   background-color: transparent;
@@ -225,4 +227,57 @@ pre code:after,
 pre tt:before,
 pre tt:after {
   content: none;
+}
+
+main {
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(253, 187, 45, 1) 0%,
+    rgba(34, 193, 195, 1) 100%
+  );
+}
+footer {
+  background: rgba(253, 187, 45);
+}
+
+div#intro {
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    45deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+}
+div#thought_heap {
+  background: rgb(255, 140, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 140, 0, 1) 0%,
+    rgba(135, 206, 235, 1) 100%
+  );
+}
+div#web_calc {
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+}
+div#another_project {
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+}
+div#personal_site_gatsby {
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
 }
