@@ -27,7 +27,7 @@ const IndexPage = ({ data }) => (
   <Layout>
     <div
       id="intro"
-      className="mx-6 mb-8 flex flex-col justify-center rounded-xl bg-gradient-to-br from-sky-500/75 via-teal-500/75 to-emerald-500/75 p-8 shadow-md backdrop-blur-3xl sm:mx-14 sm:mb-12 xl:mx-36"
+      className="mx-6 mb-8 flex flex-col justify-center rounded-xl bg-gradient-to-br from-sky-500/75 via-teal-500/75 to-emerald-500/75 px-6 py-8 shadow-md backdrop-blur-3xl sm:mx-14 sm:mb-12 sm:px-8 xl:mx-36"
     >
       <StaticImage
         className="mb-8 self-center rounded-xl shadow-md"
