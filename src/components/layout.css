@@ -265,14 +265,6 @@ div#web_calc {
     rgba(253, 187, 45, 1) 100%
   );
 }
-div#another_project {
-  background: rgb(34, 193, 195);
-  background: linear-gradient(
-    0deg,
-    rgba(34, 193, 195, 1) 0%,
-    rgba(253, 187, 45, 1) 100%
-  );
-}
 div#personal_site_gatsby {
   background: rgb(34, 193, 195);
   background: linear-gradient(

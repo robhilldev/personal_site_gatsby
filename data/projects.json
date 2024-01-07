@@ -2,7 +2,7 @@
   {
     "name": "Thought Heap",
     "page": "thought_heap",
-    "description": "A no framework browser based app for tracking thoughts that allows for multiple lists where thoughts can be created, edited, and deleted. Lists are saved to local storage for persistance and the last viewed list is displayed on next visit.",
+    "description": "A no framework browser based app for tracking thoughts that allows for multiple lists where thoughts can be created, edited, and deleted. Lists are saved to local storage and the last viewed list is displayed on next visit.",
     "app_url": "https://robhilldev.github.io/ThoughtHeap/",
     "code_url": "https://github.com/robhilldev/ThoughtHeap",
     "tags": [
@@ -30,14 +30,6 @@
       "OrderOfOperations",
       "GithubPages"
     ]
-  },
-  {
-    "name": "Another Project",
-    "page": "another_project",
-    "description": "Some description of my next project, probably using NextJS.",
-    "app_url": "#",
-    "code_url": "#",
-    "tags": ["NextJS", "React", "TypeScript", "TailwindCSS", "Vercel"]
   },
   {
     "name": "This Portfolio!",
