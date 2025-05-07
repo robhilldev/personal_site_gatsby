@@ -26,8 +26,8 @@ export const query = graphql`
 const IndexPage = ({ data }) => (
   <Layout>
     <div
-      id="intro"
-      className="mx-6 mb-8 flex flex-col justify-center rounded-xl bg-gradient-to-br from-sky-500/75 via-teal-500/75 to-emerald-500/75 px-6 py-8 shadow-md backdrop-blur-3xl sm:mx-14 sm:mb-12 sm:px-8 xl:mx-36"
+      // id="intro"
+      className="mx-6 mb-4 flex flex-col justify-center px-6 py-8 sm:mx-14 sm:mb-12 sm:px-8 xl:mx-36"
     >
       <StaticImage
         className="mb-8 self-center rounded-xl shadow-md"
@@ -39,10 +39,10 @@ const IndexPage = ({ data }) => (
         alt="A frog on a flower"
       />
       <div className="mb-4 rounded-xl bg-white/30 px-3 pt-3 shadow-md ring-1 ring-inset ring-white/10">
-        <h1 className="mb-4 self-center text-center text-3xl font-extrabold">
+        <h1 className="mb-4 text-center text-3xl font-extrabold">
           Hey, I'm Robhilldev.
         </h1>
-        <h1 className="mb-4 self-center text-center text-3xl font-extrabold">
+        <h1 className="mb-4 text-center text-3xl font-extrabold">
           Welcome to my portfolio!
         </h1>
       </div>
