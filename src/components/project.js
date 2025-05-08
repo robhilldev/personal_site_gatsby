@@ -1,8 +1,8 @@
 import React from "react"
 
 const Project = ({ name, page, description, app_url, code_url, tags }) => (
-  <div id={page} className="mx-4 mb-6 rounded-xl py-8 px-6 shadow-md sm:px-8">
-    <div className="mb-6 rounded-xl bg-white/30 p-4 shadow-md ring-1 ring-inset ring-white/10 backdrop-blur-3xl">
+  <div id={page} className="rounded-lg py-8 px-6 shadow-md sm:px-8">
+    <div className="mb-6 rounded-lg bg-white/30 p-4 shadow-md ring-1 ring-inset ring-white/10 backdrop-blur-3xl">
       <h2 className="mb-3 text-2xl font-bold">{name}</h2>
       <p className="mb-4">{description}</p>
       {app_url !== "#" && (

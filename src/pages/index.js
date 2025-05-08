@@ -25,12 +25,9 @@ export const query = graphql`
 
 const IndexPage = ({ data }) => (
   <Layout>
-    <div
-      // id="intro"
-      className="mx-6 mb-4 flex flex-col justify-center px-6 py-8 sm:mx-14 sm:mb-12 sm:px-8 xl:mx-36"
-    >
+    <div className="mx-6 mb-4 flex flex-col justify-center px-6 py-8 sm:mx-14 sm:mb-12 sm:px-8 xl:mx-36">
       <StaticImage
-        className="mb-8 self-center rounded-xl shadow-md"
+        className="self-center rounded-lg shadow-md"
         src="../../data/images/frog_on_flower.jpeg"
         loading="eager"
         width={100}
@@ -38,15 +35,17 @@ const IndexPage = ({ data }) => (
         formats={["auto", "webp", "avif"]}
         alt="A frog on a flower"
       />
-      <div className="mb-4 rounded-xl bg-white/30 px-3 pt-3 shadow-md ring-1 ring-inset ring-white/10">
-        <h1 className="mb-4 text-center text-3xl font-extrabold">
+      <div className="pb-8">{/*for spacing*/}</div>
+      <div className="rounded-lg bg-white/30 p-4 shadow-md ring-1 ring-inset ring-white/10">
+        <h1 className="pb-4 text-center text-3xl font-extrabold">
           Hey, I'm Robhilldev.
         </h1>
-        <h1 className="mb-4 text-center text-3xl font-extrabold">
-          Welcome to my portfolio!
+        <h1 className="text-center text-2xl font-extrabold">
+          Here are some projects I've worked on.
         </h1>
       </div>
-      <div className="mt-2 space-x-6 self-center rounded-lg bg-gradient-to-br from-orange-500 via-amber-500 to-yellow-500 p-2 px-4 shadow-md">
+      <div className="pb-6">{/*for spacing*/}</div>
+      <div className="space-x-6 self-center rounded-md bg-gradient-to-br from-orange-500 via-amber-500 to-yellow-500 p-2 px-4 shadow-md">
         <a
           className="font-bold text-black decoration-dotted"
           href="https://github.com/robhilldev"
@@ -55,7 +54,9 @@ const IndexPage = ({ data }) => (
         >
           <StaticImage
             className="mr-1"
-            src="../../data/images/github-icon.png"
+            src="../../data/images/github-logo.svg"
+            layout="constrained"
+            width={24}
             loading="eager"
             formats={["auto", "webp", "avif"]}
             alt="Github icon"
@@ -63,14 +64,16 @@ const IndexPage = ({ data }) => (
           Gitub
         </a>
         {/* <a
-          className="decoration-dotted font-bold"
+          className="font-bold decoration-dotted"
           href="#"
           target="_blank"
           rel="noreferrer"
         >
           <StaticImage
             className="mr-1"
-            src="../../data/images/linkedin-icon.png"
+            src="../../data/images/linkedin-logo.svg"
+            layout="constrained"
+            width={24}
             loading="eager"
             formats={["auto", "webp", "avif"]}
             alt="Linkedin icon"
@@ -79,9 +82,12 @@ const IndexPage = ({ data }) => (
         </a> */}
       </div>
     </div>
-    <div className="mx-2 flex flex-row flex-wrap justify-between pb-2 sm:mx-10 sm:pb-4 xl:mx-32">
+    <div className="flex flex-row flex-wrap justify-between px-2 pb-2 sm:px-10 sm:pb-4 xl:px-32">
       {data.allProjectsJson.edges.map(({ node: project }) => (
-        <div key={project.page} className="sm:basis-auto md:basis-1/2">
+        <div
+          key={project.page}
+          className="px-4 pb-6 sm:basis-auto md:basis-1/2"
+        >
           <Project
             name={project.name}
             page={project.page}
