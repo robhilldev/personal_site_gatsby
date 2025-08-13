@@ -2,7 +2,7 @@
   {
     "name": "Thought Heap",
     "page": "thought_heap",
-    "description": "A no framework browser based app for tracking thoughts that allows for multiple lists where thoughts can be created, edited, and deleted. Lists are saved to local storage and the last viewed list is displayed on next visit.",
+    "description": "A no framework browser based app for tracking thoughts that allows for multiple lists where thoughts can be created, edited, and deleted. Lists are saved to local storage (for demo purposes) and the last viewed list is displayed on next visit.",
     "app_url": "https://robhilldev.github.io/ThoughtHeap/",
     "code_url": "https://github.com/robhilldev/ThoughtHeap",
     "tags": [
@@ -32,9 +32,9 @@
     ]
   },
   {
-    "name": "This Portfolio!",
+    "name": "This Portfolio",
     "page": "personal_site_gatsby",
-    "description": "A statically generated portfolio site using GraphQL to pull in each projects data at build time.",
+    "description": "A statically generated portfolio site using GraphQL to pull in each projects data at build time. It's probably a little over engineered but it was fun to make.",
     "app_url": "#",
     "code_url": "https://github.com/robhilldev/personal_site_gatsby",
     "tags": [

@@ -61,7 +61,7 @@ const IndexPage = ({ data }) => (
             formats={["auto", "webp", "avif"]}
             alt="Github icon"
           />
-          Gitub
+          Gitub ↗
         </a>
         {/* <a
           className="font-bold decoration-dotted"
@@ -78,7 +78,7 @@ const IndexPage = ({ data }) => (
             formats={["auto", "webp", "avif"]}
             alt="Linkedin icon"
           />
-          LinkedIn
+          LinkedIn ↗
         </a> */}
       </div>
     </div>
